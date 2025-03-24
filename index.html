@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Autobiography</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @keyframes appear {
+            from {
+                opacity: 0;
+                scale: 0.5;
+            }
+            to {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+        @keyframes apir {
+            from {
+                opacity: 0;
+                transform: translateY(-300px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes apirleft {
+            from {
+                opacity: 0;
+                transform: translateX(-300px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes apirs {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes moveUp {
+            from {
+                opacity: 0;
+                transform: translateY(100px);  /* Starts below */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);      /* Moves to normal position */
+            }
+        }
+
+        
+        .quotes-info{
+            animation:moveUp ease-out;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+
+        .introduction-info {
+            animation: apirleft ease-in;
+        }
+
+        .story-info p {
+            animation: apirleft ease-out;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+
+        .story-info h1, .hobby-info h1, .timeline-info, .images-info, .achievements-info{
+            animation: apir ease-out;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">My Autobiography</a>
+        <ul>
+            <li class="active"><a href="#introduction">Introduction</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#quotes">Quotes</a></li>
+        </ul>
+    </nav>
+
+    <section id="introduction">
+        <div class="introduction-info">
+            <h1>James Jaron</h1>
+            <h2>I’m an 18-year-old Grade 12 STEM student at <i>Marikina Science High School</i>.</h2>
+            <p>I love playing video games, exploring tech-related stuff, and watching Instagram reels. I enjoy trying out new gadgets, tinkering with software, and learning about the latest tech trends. When I’m not busy with school, gaming is my go-to way to relax and have fun. Scrolling through Instagram reels also keeps me entertained and updated on the latest memes and creative content.</p>
+            <div class="btn-sci">
+                <a href="https://github.com/Sybax04/Autobiography/tree/main" target="_blank" class="btn">Website Files</a>
+                <div class="sci">
+                    <a href="https://www.facebook.com/james.jaron.06/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://discord.gg/VNEw5geg8B" target="_blank"><i class='bx bxl-discord-alt'></i></a>
+                    <a href="https://www.instagram.com/jj_hashi/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="intro-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="images/James.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2025 James Jaron. Built with solely Visual Studio Code.</p>
+    </footer>
+
+    <section id="story">
+        <div class="story-info">
+            <h1>Story</h1>
+            <p style="font-size: 20px;">I am the son of two parents who are the youngest in their own families, and to top that off, I am also the  <sub>youngest</sub>  in  our family. This is a fact I have not shared with many since this fact comes at a cost. Because of this, I never got to meet my grandparents from my father's side and only got to meet my grandmother in my mother's side. I was too young and they were too old for me to meet each other. The most <strike>traumatic</strike> <u>memorable</u> experience that I have, which you can also count as trauma, is my speech presentation in Grade 11 S.Y.  <sup>2023-2024 </sup>in Oral Communications Class. Despite its traumatic connotation, this experience has shaped me in ways I never thought I would be. As a matter of fact, that specific trauma was the central topic in my Ateneo Scholarship Essay. My hobby is to play online games. My dream is to become financially independent.</p>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="hobby-info">
+            <h1>Hobbies</h1>
+            <div class="hobby-gallery">
+                <div class="hobby-item">
+                    <div class="hobby-text">Gaming</div>
+                    <a href="https://playvalorant.com/en-us/download/" target="_blank">
+                        <img src="images/Valorant.png" alt="Gaming">
+                    </a>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-text">Piplup</div>
+                    <a href="https://bulbapedia.bulbagarden.net/wiki/Piplup_(Pok%C3%A9mon)" target="_blank">
+                        <img src="images/piplup.png" alt="Piplup">
+                    </a>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-text">Instagram Reels</div>
+                    <a href="https://www.instagram.com/reel/DEJkleuSeg0/?utm_source=ig_web_button_share_sheet" target="_blank">
+                        <img src="images/dog.png" alt="Reels">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="achievements-info">
+            <h1>Achievements</h1>
+            <div class="achievements-container">
+                <div class="achievement-item">
+                    <i class='bx bxs-trophy'></i>
+                    <h2>Champion</h2>
+                    <p>Won the Division Schools Press Conference 2025 in Radio Broadcasting (Technician).</p>
+                </div>
+                <div class="achievement-item">
+                    <i class='bx bxs-medal'></i>
+                    <h2>Regional Qualifier</h2>
+                    <p>Qualified for the Regional Schools Press Conference in Radio Broadcasting.</p>
+                </div>
+                <div class="achievement-item">
+                    <i class='bx bxs-graduation'></i>
+                    <h2>Honor Student</h2>
+                    <p>Consistent honor student with outstanding academic performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline">
+        <div class="timeline-info">
+            <h1>My Timeline</h1>
+            <div class="timeline-container">
+            
+                <!-- Timeline Line -->
+                <div class="timeline-line"></div>
+        
+                <!-- Timeline Items -->
+                <div class="timeline-item">
+                    <div class="circle"></div>
+                    <div class="event">
+                        <h2>2006</h2>
+                        <p>Born in Marikina City.</p>
+                    </div>
+                </div>
+        
+                <div class="timeline-item">
+                    <div class="circle"></div>
+                    <div class="event">
+                        <h2>2019</h2>
+                        <p>Graduated from Elementary School.</p>
+                    </div>
+                </div>
+        
+                <div class="timeline-item">
+                    <div class="circle"></div>
+                    <div class="event">
+                        <h2>2019</h2>
+                        <p>Entered Marisci (Marikina Science High School).</p>
+                    </div>
+                </div>
+        
+                <div class="timeline-item">
+                    <div class="circle"></div>
+                    <div class="event">
+                        <h2>2023</h2>
+                        <p>Graduated Junior High School.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="images">
+        <div class="images-info">
+            <h1>My Images</h1>
+            <div class="images-images">
+                    <img src="images/PNG1.jpg" alt="">
+                    <img src="images/PNG2.jpg" alt="">
+                    <img src="images/PNG3.jpg" alt="">
+                    <img src="images/PNG4.jpg" alt="">
+                    <img src="images/PNG5.jpg" alt="">
+                    <img src="images/PNG6.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+        <section id="quotes">
+            <div class="quotes-info">
+                <h1>Quote</h1>
+                <p>
+                    <q style="color:#ffc300">
+                        We just need to find that 
+                        <mark style="background-color:#ffc300;"><span class="hover-spark">spark</span></mark>
+                    </q>
+                </p>
+        
+                <div class="quotes-img" onmouseover="playAudio()" onmouseout="pauseAudio()">
+                    <div class="quotes-imgimg">
+                        <div class="img-item-quote">
+                            <img src="images/PNG10.png" alt="">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="quote-name">
+                    <a href="https://until-then-game.fandom.com/wiki/Nicole_Lacsamana" target="_blank">
+                        <p>Nicole Lacsamana</p>
+                    </a>
+                </div>
+            </div>
+            <div id="now-playing" class="now-playing"></div>
+            <audio id="quote-audio" src="Until-then.mp3"></audio>
+        </section>
+
+        
+        </body>
+    <script src="script.js"></script>
